@@ -8,7 +8,7 @@ interface EducationItem {
   startYear: number;
   endYear: number | string;
   description?: string;
-  backgroundImage?: string;
+  backgroundImage?: string | null;
 }
 
 const Education: React.FC = () => {
@@ -21,7 +21,7 @@ const Education: React.FC = () => {
       startYear: 2018,
       endYear: 2022,
       description: 'Specialized in Software Engineering with a focus on cloud computing and distributed systems. Completed thesis on scalable microservices architecture.',
-      backgroundImage: `${process.env.PUBLIC_URL}/images/education/university.jpg`
+      backgroundImage: null
     },
     {
       id: 2,
@@ -31,7 +31,7 @@ const Education: React.FC = () => {
       startYear: 2017,
       endYear: 2018,
       description: 'Persued my higher secondary education from this school. Specialized in Physics, Chemistry, and Mathematics.',
-      backgroundImage: `${process.env.PUBLIC_URL}/images/education/highschool.jpg`
+      backgroundImage: null
     },
     {
       id: 3,
@@ -41,7 +41,7 @@ const Education: React.FC = () => {
       startYear: 2004,
       endYear: 2016,
       description: 'Schooling completed from this school. Specialized in Science, Mathematics,Computer Science and English.',
-      backgroundImage: `${process.env.PUBLIC_URL}/images/education/school.jpg`
+      backgroundImage: null
     }
   ];
   
@@ -86,9 +86,7 @@ const Education: React.FC = () => {
                   <div 
                     className="rounded-xl shadow-lg p-6 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl relative overflow-hidden backdrop-blur-lg"
                     style={{
-                      background: item.backgroundImage 
-                        ? `linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05)), url(${item.backgroundImage})`
-                        : 'linear-gradient(145deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02))',
+                      background: `linear-gradient(145deg, ${index % 3 === 0 ? 'rgba(1, 118, 211, 0.1)' : index % 3 === 1 ? 'rgba(142, 68, 173, 0.1)' : 'rgba(41, 128, 185, 0.1)'}, rgba(255, 255, 255, 0.05))`,
                       backgroundSize: 'cover',
                       backgroundPosition: 'center',
                       borderTop: '1px solid rgba(255, 255, 255, 0.2)',

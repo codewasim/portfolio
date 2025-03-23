@@ -12,7 +12,7 @@ const About: React.FC = () => {
           <div className="lg:col-span-2">
             <div className="relative w-64 h-64 mx-auto rounded-full overflow-hidden shadow-lg transform transition-transform duration-500 hover:scale-105 border-4 border-salesforce-blue">
               <img 
-                src={`${process.env.PUBLIC_URL}/ProfilePhoto.jpg`} 
+                src={`${process.env.PUBLIC_URL}/profilePhoto.jpg`} 
                 alt="Profile Photo" 
                 className="w-full h-full object-cover"
               />
@@ -122,7 +122,7 @@ const About: React.FC = () => {
               
               <a 
                 href={`${process.env.PUBLIC_URL}/Wasim_SPR.pdf`}
-                download="Wasim_Ansari_Resume.pdf"
+                download="Wasim_SPR.pdf"
                 className="inline-flex items-center px-5 py-2.5 text-salesforce-blue border border-salesforce-blue font-medium rounded-lg hover:bg-salesforce-blue hover:text-white transition-colors"
               >
                 Resume
