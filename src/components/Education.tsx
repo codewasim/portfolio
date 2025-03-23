@@ -21,7 +21,7 @@ const Education: React.FC = () => {
       startYear: 2018,
       endYear: 2022,
       description: 'Specialized in Software Engineering with a focus on cloud computing and distributed systems. Completed thesis on scalable microservices architecture.',
-      backgroundImage: '/images/education/university.jpg'
+      backgroundImage: `${process.env.PUBLIC_URL}/images/education/university.jpg`
     },
     {
       id: 2,
@@ -31,7 +31,7 @@ const Education: React.FC = () => {
       startYear: 2017,
       endYear: 2018,
       description: 'Persued my higher secondary education from this school. Specialized in Physics, Chemistry, and Mathematics.',
-      backgroundImage: '/images/education/highschool.jpg'
+      backgroundImage: `${process.env.PUBLIC_URL}/images/education/highschool.jpg`
     },
     {
       id: 3,
@@ -41,7 +41,7 @@ const Education: React.FC = () => {
       startYear: 2004,
       endYear: 2016,
       description: 'Schooling completed from this school. Specialized in Science, Mathematics,Computer Science and English.',
-      backgroundImage: '/images/education/school.jpg'
+      backgroundImage: `${process.env.PUBLIC_URL}/images/education/school.jpg`
     }
   ];
   
