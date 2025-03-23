@@ -25,7 +25,7 @@ const Certifications: React.FC = () => {
       expiryDate: 'Jan 2026',
       credentialId: '269628',
       credentialURL: 'https://trailblazer.me/id/credential/verify',
-      badgeImage: `${process.env.PUBLIC_URL}/admin.png`,
+      badgeImage: `https://codewasim.github.io/portfolio/admin.png`,
       description: 'Demonstrates expertise in Salesforce configuration, user management, and security settings.',
       skills: ['User Management', 'Security Controls', 'Data Management', 'Workflow Automation']
     },
@@ -37,7 +37,7 @@ const Certifications: React.FC = () => {
       expiryDate: 'Mar 2026',
       credentialId: 'SF-PD1-789012',
       credentialURL: 'https://trailblazer.me/id/credential/verify',
-      badgeImage: `${process.env.PUBLIC_URL}/pdI.png`,
+      badgeImage: `https://codewasim.github.io/portfolio/pdI.png`,
       description: 'Validates ability to develop custom applications on the Salesforce platform using Apex and Visualforce.',
       skills: ['Apex Programming', 'Visualforce', 'SOQL/SOSL', 'Data Modeling']
     },
@@ -49,7 +49,7 @@ const Certifications: React.FC = () => {
       expiryDate: 'Jun 2026',
       credentialId: 'SF-JSD1-345678',
       credentialURL: 'https://trailblazer.me/id/credential/verify',
-      badgeImage: `${process.env.PUBLIC_URL}/JSI.png`,
+      badgeImage: `https://codewasim.github.io/portfolio/JSI.png`,
       description: 'Confirms proficiency in JavaScript development for Salesforce applications, particularly Lightning Web Components.',
       skills: ['JavaScript Development', 'Lightning Web Components', 'Events & Communication', 'Data Access']
     },
@@ -60,7 +60,7 @@ const Certifications: React.FC = () => {
       issueDate: 'Sep 2022',
       credentialId: 'SF-ASSOC-901234',
       credentialURL: 'https://trailblazer.me/id/credential/verify',
-      badgeImage: `${process.env.PUBLIC_URL}/Associate.png`,
+      badgeImage: `https://codewasim.github.io/portfolio/Associate.png`,
       description: 'Entry-level certification that demonstrates fundamental knowledge of the Salesforce platform and ecosystem.',
       skills: ['Salesforce Fundamentals', 'Cloud Computing', 'CRM Concepts', 'Basic Administration']
     },
@@ -72,7 +72,7 @@ const Certifications: React.FC = () => {
       expiryDate: 'Nov 2026',
       credentialId: 'SF-EAI-567890',
       credentialURL: 'https://trailblazer.me/id/credential/verify',
-      badgeImage: `${process.env.PUBLIC_URL}/AIassociate.png`,
+      badgeImage: `https://codewasim.github.io/portfolio/AIassociate.png`,
       description: 'Validates knowledge of AI capabilities within Salesforce and how to implement Einstein features.',
       skills: ['Einstein Prediction Builder', 'AI Ethics', 'Einstein Analytics', 'Machine Learning Concepts']
     },
@@ -84,7 +84,7 @@ const Certifications: React.FC = () => {
       expiryDate: 'Aug 2026',
       credentialId: 'SF-PAB-234567',
       credentialURL: 'https://trailblazer.me/id/credential/verify',
-      badgeImage: `${process.env.PUBLIC_URL}/platformAppBuilder.png`,
+      badgeImage: `https://codewasim.github.io/portfolio/platformAppBuilder.png`,
       description: 'Demonstrates ability to build custom applications using declarative Salesforce tools.',
       skills: ['App Design', 'Business Logic', 'User Interface', 'Reports & Dashboards']
     }

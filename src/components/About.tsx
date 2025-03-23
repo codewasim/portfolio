@@ -12,9 +12,14 @@ const About: React.FC = () => {
           <div className="lg:col-span-2">
             <div className="relative w-64 h-64 mx-auto rounded-full overflow-hidden shadow-lg transform transition-transform duration-500 hover:scale-105 border-4 border-salesforce-blue">
               <img 
-                src={`${process.env.PUBLIC_URL}/profilePhoto.jpg`} 
+                src="https://codewasim.github.io/portfolio/profilePhoto.jpg" 
                 alt="Profile Photo" 
                 className="w-full h-full object-cover"
+                onError={(e) => {
+                  const target = e.target as HTMLImageElement;
+                  target.style.display = 'none';
+                  target.parentElement!.innerHTML = '<div class="w-full h-full flex items-center justify-center bg-gradient-to-r from-salesforce-blue to-salesforce-purple text-white text-4xl font-bold">WA</div>';
+                }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-salesforce-blue/70 to-transparent opacity-30"></div>
             </div>
@@ -121,8 +126,8 @@ const About: React.FC = () => {
               </a>
               
               <a 
-                href={`${process.env.PUBLIC_URL}/Wasim_SPR.pdf`}
-                download="Wasim_SPR.pdf"
+                href="https://codewasim.github.io/portfolio/Wasim_SPR.pdf"
+                download="Wasim_Ansari_Resume.pdf"
                 className="inline-flex items-center px-5 py-2.5 text-salesforce-blue border border-salesforce-blue font-medium rounded-lg hover:bg-salesforce-blue hover:text-white transition-colors"
               >
                 Resume
