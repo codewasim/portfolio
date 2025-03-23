@@ -12,7 +12,7 @@ const About: React.FC = () => {
           <div className="lg:col-span-2">
             <div className="relative w-64 h-64 mx-auto rounded-full overflow-hidden shadow-lg transform transition-transform duration-500 hover:scale-105 border-4 border-salesforce-blue">
               <img 
-                src={`${process.env.PUBLIC_URL}/ProfilePhoto.jpg`} 
+                src={`${process.env.PUBLIC_URL}/profilePhoto.jpg`} 
                 alt="Profile Photo" 
                 className="w-full h-full object-cover"
               />
