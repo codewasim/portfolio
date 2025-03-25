@@ -16,13 +16,21 @@ const About: React.FC = () => {
       observer.observe(el);
     });
     
-    // Set underline width to match heading width
-    const headingElement = document.querySelector('#summary-heading');
-    const underlineElement = document.querySelector('#summary-underline');
+    // Set underline width to match heading width for both headings
+    const summaryHeadingElement = document.querySelector('#summary-heading');
+    const summaryUnderlineElement = document.querySelector('#summary-underline');
     
-    if (headingElement && underlineElement) {
-      const headingWidth = headingElement.getBoundingClientRect().width;
-      (underlineElement as HTMLElement).style.width = `${headingWidth}px`;
+    if (summaryHeadingElement && summaryUnderlineElement) {
+      const headingWidth = summaryHeadingElement.getBoundingClientRect().width;
+      (summaryUnderlineElement as HTMLElement).style.width = `${headingWidth}px`;
+    }
+    
+    const aboutHeadingElement = document.querySelector('#about-heading');
+    const aboutUnderlineElement = document.querySelector('#about-underline');
+    
+    if (aboutHeadingElement && aboutUnderlineElement) {
+      const headingWidth = aboutHeadingElement.getBoundingClientRect().width;
+      (aboutUnderlineElement as HTMLElement).style.width = `${headingWidth}px`;
     }
     
     return () => observer.disconnect();
@@ -31,9 +39,12 @@ const About: React.FC = () => {
   return (
     <section id="about" className="py-20 bg-white dark:bg-gray-900">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold mb-8 text-salesforce-navy dark:text-white pb-2 border-b-2 border-[#00A1E0] inline-block animate-on-scroll opacity-0 transition-all duration-700 translate-y-8" style={{ animationDelay: '100ms' }}>
-          About Me
-        </h2>
+        <div className="relative inline-block mb-8">
+          <h2 id="about-heading" className="text-3xl font-bold text-salesforce-navy dark:text-white pb-2 animate-on-scroll opacity-0 transition-all duration-700 translate-y-8" style={{ animationDelay: '100ms' }}>
+            About Me
+          </h2>
+          <span id="about-underline" className="absolute bottom-0 left-0 h-0.5 bg-[#00A1E0] animate-on-scroll opacity-0 transition-all duration-700" style={{ animationDelay: '200ms' }}></span>
+        </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 items-center">
           <div className="lg:col-span-2 animate-on-scroll opacity-0 transition-all duration-700" style={{ animationDelay: '200ms' }}>
