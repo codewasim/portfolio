@@ -86,11 +86,11 @@ const Projects: React.FC = () => {
   const projects: Project[] = [
     {
       id: 1,
-      title: 'Salesforce CRM Customization',
-      description: 'Custom Salesforce implementation with Lightning Web Components, Apex triggers, and custom objects to streamline sales processes and improve data visibility for a financial services company.',
-      image: 'https://placehold.co/800x600/00A1E0/FFFFFF?text=Salesforce+CRM',
-      technologies: ['Salesforce', 'Lightning Web Components', 'Apex', 'SOQL'],
-      demoLink: 'https://example.com/crm-demo',
+      title: 'Currency Converter',
+      description: 'A simple currency converter application built with Lightning Web Components framework and a currency API. It allows users to convert amounts between different currencies quickly and easily.',
+      image: 'https://placehold.co/800x600/00A1E0/FFFFFF?text=Currency+Converter',
+      technologies: ['LWC', 'Currency API', 'Apex', 'SOQL', 'JavaScript'],
+      demoLink: 'https://hexawaretechnologies52-dev-ed.develop.my.site.com/codewasim/currency-converter',
     },
     {
       id: 2,
