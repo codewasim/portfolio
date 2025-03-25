@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 interface Skill {
   name: string;
@@ -8,6 +8,16 @@ interface Skill {
 
 const Skills: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState<string>('All');
+  const headingRef = useRef<HTMLHeadingElement>(null);
+  const underlineRef = useRef<HTMLSpanElement>(null);
+  
+  useEffect(() => {
+    // Set underline width to match heading width
+    if (headingRef.current && underlineRef.current) {
+      const headingWidth = headingRef.current.offsetWidth;
+      underlineRef.current.style.width = `${headingWidth}px`;
+    }
+  }, []);
   
   const skills: Skill[] = [
     // Salesforce Skills
@@ -39,9 +49,12 @@ const Skills: React.FC = () => {
   return (
     <section id="skills" className="py-20 bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold mb-3 text-center text-salesforce-navy dark:text-white">
-          Salesforce Skills
-        </h2>
+        <div className="relative inline-block mb-3 mx-auto text-center">
+          <h2 ref={headingRef} className="text-3xl font-bold text-center text-salesforce-navy dark:text-white pb-2">
+            Salesforce Skills
+          </h2>
+          <span ref={underlineRef} className="absolute bottom-0 left-0 w-full h-0.5 bg-[#00A1E0]"></span>
+        </div>
         <p className="text-center text-gray-600 dark:text-gray-400 mb-10 max-w-2xl mx-auto">
           Specialized expertise in Salesforce development, administration, and implementation
         </p>
@@ -54,7 +67,7 @@ const Skills: React.FC = () => {
                 key={category}
                 className={`px-5 py-2 m-1 rounded-full text-sm font-medium transition-all duration-300 ${
                   activeCategory === category 
-                    ? 'bg-salesforce-blue text-white shadow-md' 
+                    ? 'bg-[#00A1E0] text-white shadow-md' 
                     : 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700'
                 }`}
                 onClick={() => setActiveCategory(category)}
@@ -79,17 +92,17 @@ const Skills: React.FC = () => {
                     {skill.category}
                   </span>
                 </div>
-                <div className="w-14 h-14 rounded-full bg-gradient-to-br from-salesforce-blue to-salesforce-purple flex items-center justify-center text-white font-bold text-lg shadow-md">
+                <div className="w-14 h-14 rounded-full bg-gradient-to-br from-[#00A1E0] to-[#6452E9] flex items-center justify-center text-white font-bold text-lg shadow-md">
                   {skill.level}%
                 </div>
               </div>
               
               <div className="h-2 bg-gray-100 dark:bg-gray-700 rounded-full mt-3 overflow-hidden">
                 <div 
-                  className="h-full rounded-full bg-gradient-to-r from-salesforce-blue via-salesforce-purple to-blue-500"
+                  className="h-full rounded-full bg-gradient-to-r from-[#00A1E0] via-[#6452E9] to-[#00A1E0]"
                   style={{ 
                     width: `${skill.level}%`,
-                    boxShadow: '0 0 10px rgba(1, 118, 211, 0.3)',
+                    boxShadow: '0 0 10px rgba(0, 161, 224, 0.3)',
                     transition: 'width 1s ease-out'
                   }}
                 ></div>
@@ -100,7 +113,7 @@ const Skills: React.FC = () => {
                   {[...Array(5)].map((_, i) => (
                     <svg 
                       key={i} 
-                      className={`w-4 h-4 ${i < Math.round(skill.level/20) ? 'text-salesforce-blue' : 'text-gray-300 dark:text-gray-600'}`} 
+                      className={`w-4 h-4 ${i < Math.round(skill.level/20) ? 'text-[#00A1E0]' : 'text-gray-300 dark:text-gray-600'}`} 
                       fill="currentColor" 
                       viewBox="0 0 20 20"
                     >
