@@ -98,7 +98,7 @@ const Education: React.FC = () => {
           <h2 id="education-heading" className="text-3xl font-bold text-salesforce-navy dark:text-white pb-2">
             Education
           </h2>
-          <span id="education-underline" className="absolute -bottom-2 left-0 h-1 bg-gradient-to-r from-[#00A1E0] to-[#6452E9]"></span>
+          <span id="education-underline" className="absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-[#00A1E0] to-[#6452E9]"></span>
         </div>
         <p className="text-gray-600 dark:text-gray-400 mb-12 max-w-xl animate-on-scroll opacity-0 transition-all duration-1000 translate-y-6" style={{ transitionDelay: '200ms' }}>
           My academic journey that has shaped my knowledge and professional foundation.

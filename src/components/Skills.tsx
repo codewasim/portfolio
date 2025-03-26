@@ -49,13 +49,13 @@ const Skills: React.FC = () => {
   return (
     <section id="skills" className="py-20 bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="relative inline-block mb-3 mx-auto text-center">
-          <h2 ref={headingRef} className="text-3xl font-bold text-center text-salesforce-navy dark:text-white pb-2">
+        <div className="relative inline-block mb-3">
+          <h2 ref={headingRef} className="text-3xl font-bold text-salesforce-navy dark:text-white pb-2">
             Salesforce Skills
           </h2>
-          <span ref={underlineRef} className="absolute bottom-0 left-0 w-full h-0.5 bg-[#00A1E0]"></span>
+          <span ref={underlineRef} className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-[#00A1E0] to-[#6452E9]"></span>
         </div>
-        <p className="text-center text-gray-600 dark:text-gray-400 mb-10 max-w-2xl mx-auto">
+        <p className="text-gray-600 dark:text-gray-400 mb-10 max-w-2xl">
           Specialized expertise in Salesforce development, administration, and implementation
         </p>
         

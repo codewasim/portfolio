@@ -133,7 +133,7 @@ const Projects: React.FC = () => {
           <h2 id="projects-heading" className="text-3xl font-bold text-salesforce-navy dark:text-white pb-2">
             Project Experience
           </h2>
-          <span id="projects-underline" className="absolute bottom-0 left-0 h-0.5 bg-[#00A1E0]"></span>
+          <span id="projects-underline" className="absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-[#00A1E0] to-[#6452E9]"></span>
         </div>
         
         <p className="text-gray-600 dark:text-gray-400 mb-12 max-w-2xl">

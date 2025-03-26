@@ -127,7 +127,7 @@ const Certifications: React.FC = () => {
       </div>
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="text-center mb-16">
+        <div className="mb-16">
           <div className="relative inline-block mb-6">
             <h2 
               id="certifications-heading"
@@ -137,10 +137,10 @@ const Certifications: React.FC = () => {
             </h2>
             <span 
               id="certifications-underline"
-              className={`absolute bottom-0 left-0 h-1 bg-[#00A1E0] transition-all duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
+              className={`absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-[#00A1E0] to-[#6452E9] transition-all duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
             ></span>
           </div>
-          <p className={`text-gray-600 dark:text-gray-400 max-w-2xl mx-auto text-lg transition-all duration-1000 delay-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}>
+          <p className={`text-gray-600 dark:text-gray-400 max-w-2xl text-lg transition-all duration-1000 delay-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}>
             Validated expertise in Salesforce technologies and development practices
           </p>
         </div>

@@ -19,7 +19,7 @@ const Experience: React.FC = () => {
           <h2 ref={headingRef} className="text-3xl font-bold text-salesforce-navy dark:text-white pb-2">
             Professional Experience
           </h2>
-          <span ref={underlineRef} className="absolute bottom-0 left-0 w-full h-0.5 bg-[#00A1E0]"></span>
+          <span ref={underlineRef} className="absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-[#00A1E0] to-[#6452E9]"></span>
         </div>
         
         <div className="relative">

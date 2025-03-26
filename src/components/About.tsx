@@ -40,10 +40,10 @@ const About: React.FC = () => {
     <section id="about" className="py-20 bg-white dark:bg-gray-900">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="relative inline-block mb-8">
-          <h2 id="about-heading" className="text-3xl font-bold text-salesforce-navy dark:text-white pb-2 animate-on-scroll opacity-0 transition-all duration-700 translate-y-8" style={{ animationDelay: '100ms' }}>
+          <h2 id="about-heading" className="text-3xl font-bold text-salesforce-navy dark:text-white pb-2 border-b-0.5 border-transparent animate-on-scroll opacity-0 transition-all duration-700 translate-y-8" style={{ animationDelay: '100ms' }}>
             About Me
           </h2>
-          <span id="about-underline" className="absolute bottom-0 left-0 h-0.5 bg-[#00A1E0] animate-on-scroll opacity-0 transition-all duration-700" style={{ animationDelay: '200ms' }}></span>
+          <div className="h-0.5 bg-gradient-to-r from-[#00A1E0] to-[#6452E9] w-full"></div>
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 items-center">
@@ -143,7 +143,7 @@ const About: React.FC = () => {
               <h3 id="summary-heading" className="text-2xl font-bold text-salesforce-navy dark:text-white pb-2">
                 Professional Summary
               </h3>
-              <span id="summary-underline" className="absolute bottom-0 left-0 h-0.5 bg-[#00A1E0]"></span>
+              <span id="summary-underline" className="absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-[#00A1E0] to-[#6452E9]"></span>
             </div>
             
             <p className="text-gray-700 dark:text-gray-300 mb-6 leading-relaxed animate-on-scroll opacity-0 transition-all duration-700" style={{ animationDelay: '500ms' }}>
