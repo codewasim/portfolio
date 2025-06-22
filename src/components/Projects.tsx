@@ -103,12 +103,12 @@ const Projects: React.FC = () => {
     },
     {
       id: 3,
-      title: 'Analytics Dashboard',
-      description: 'Interactive data visualization dashboard for business intelligence with real-time updates, custom filtering, and role-based access control for enterprise customers.',
+      title: 'Zakaat Calculator',
+      description: 'Interactive datA simple Zakaat Calculator app built using Lightning Web Components (LWC) that helps users calculate their annual Zakaat based on assets and liabilities. It provides an intuitive interface with real-time calculation and threshold checks.',
       image: 'https://placehold.co/800x600/00A1E0/FFFFFF?text=Dashboard',
-      technologies: ['JavaScript', 'D3.js', 'Node.js', 'Express', 'MongoDB'],
-      demoLink: 'https://example.com/dashboard',
-      codeLink: 'https://github.com/username/dashboard',
+      technologies: ['LWC', 'Salesforce', 'API', 'JS'],
+      demoLink: 'https://hexawaretechnologies52-dev-ed.develop.my.site.com/codewasim/zakaat-calculator',
+      // codeLink: 'https://github.com/username/dashboard',
     },
     {
       id: 4,
