@@ -94,12 +94,12 @@ const Projects: React.FC = () => {
     },
     {
       id: 2,
-      title: 'E-Commerce Platform',
-      description: 'Full-stack e-commerce application with React frontend and Spring Boot backend, featuring secure user authentication, product catalog, shopping cart, and payment processing integration.',
+      title: 'Weather App',
+      description: 'A dynamic Weather App built using Lightning Web Components (LWC) that fetches real-time weather data using a third-party Weather API. It displays current temperature, conditions, and location-specific forecasts with a clean, responsive UI.',
       image: 'https://placehold.co/800x600/00A1E0/FFFFFF?text=E-Commerce',
-      technologies: ['React', 'Spring Boot', 'MySQL', 'Stripe API', 'Docker'],
-      demoLink: 'https://example.com/ecommerce',
-      codeLink: 'https://github.com/username/ecommerce',
+      technologies: ['LWC', 'Salesforce', 'API', 'JS'],
+      demoLink: 'https://hexawaretechnologies52-dev-ed.develop.my.site.com/codewasim/weather-app',
+      // codeLink: 'https://github.com/username/ecommerce',
     },
     {
       id: 3,
