@@ -147,8 +147,8 @@ const About: React.FC = () => {
             </div>
             
             <p className="text-gray-700 dark:text-gray-300 mb-6 leading-relaxed animate-on-scroll opacity-0 transition-all duration-700" style={{ animationDelay: '500ms' }}>
-            A Salesforce Developer with about 3 years of experience and 3 certifications , specializing in Sales, Service, and Experience Clouds. Expertise in
-            Lightning Web Components (LWC) , Apex, Flows, REST & SOAP API and Visualforce. Skilled in deployment using Change Sets and tools like JIRA and Confluence.
+            A Salesforce Developer with 3+ years of experience and 9 certifications , specializing in Sales, Service, Experience Clouds & Apttus CPQ. Expertise in
+            Lightning Web Components (LWC) , Apex, Flows, REST & SOAP API and Visualforce. Skilled in deployment using Change Sets, Flowsum and tools like JIRA, Confluence & Rally.
             
             </p>
             

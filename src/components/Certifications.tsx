@@ -180,9 +180,7 @@ const Certifications: React.FC = () => {
                 <div>
                   {/* Logo/badge with 3D rotation effect */}
                   <div className="w-full flex justify-center mb-6 perspective">
-                    <div className={`relative w-32 h-32 transition-all duration-700 ${
-                      hoveredCard === cert.id ? 'transform rotate-y-180-and-back' : ''
-                    }`}>
+                    <div className="relative w-32 h-32 transition-all duration-700">
                       {/* Logo with fallback */}
                       <img 
                         src={cert.badgeImage}

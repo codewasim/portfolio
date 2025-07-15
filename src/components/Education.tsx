@@ -60,7 +60,7 @@ const Education: React.FC = () => {
       location: 'Bhatkal, Karnataka',
       startYear: 2018,
       endYear: 2022,
-      description: 'Specialized in Software Engineering with a focus on cloud computing and distributed systems. Completed thesis on scalable microservices architecture.',
+      description: 'Specialized in Software Engineering with a focus on cloud computing and distributed systems.',
       backgroundImage: null
     },
     {
